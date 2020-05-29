@@ -1,0 +1,183 @@
+$palered: rgb(230, 84, 84);
+
+.App {
+  position: relative;
+  .backDecoration {
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    .borders {
+      width: 100%;
+      height: 100%;
+      border-left: 1px solid rgba(128, 128, 128, 0.205);
+      border-right: 1px solid rgba(128, 128, 128, 0.205);
+    }
+  }
+  .heroBodyContent {
+    position: absolute;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+}
+
+// NAVIGATION
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    max-width: 150px;
+    height: 75px;
+    object-fit: contain;
+  }
+}
+
+.navigationLinks {
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      list-style: none;
+      margin-right: 40px;
+    }
+  }
+  margin-right: 100px;
+}
+
+.flexibleSpace {
+  display: flex;
+  width: 100%;
+}
+
+.drawerMenuToggle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  span {
+    display: block;
+    width: 24px;
+    margin-bottom: 8px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+  }
+  .top {
+    margin-left: 5px;
+  }
+  .bottom {
+    margin-bottom: 0px;
+  }
+}
+
+// ROW
+.heroBody {
+
+  .row1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .largeText {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 4.5rem;
+        font-weight: 600;
+        font-family: "Poppins";
+        font-weight: 400;
+        line-height: 90%;
+        letter-spacing: -0.3rem;
+      }
+    }
+    .mainInfo {
+      width: 100%;
+      padding-left: 100px;
+      .mainInfoRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .mainInfoRowItem {
+          display: flex;
+          flex-direction: column;
+          margin-right: 50px;
+          span {
+            font-weight: 600;
+          }
+          .mainInfoLargeText {
+            font-size: 2.5rem;
+            color: $palered;
+            margin-bottom: 10px;
+            font-weight: 400;
+          }
+        }
+      }
+      .mainInfoRow {
+        .mainInfoText {
+          width: 80%;
+          line-height: 2rem;
+          margin-right: 50px;
+        }
+        .ctaButton {
+          height: 60px;
+          width: 60px;
+          background: $palered;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span {
+            display: block;
+            width: 10px;
+            height: 2px;
+            background: white;
+            border-radius: 2px;
+          }
+          .top {
+            transform: rotate(45deg);
+            margin-bottom: 4px;
+          }
+          .bottom {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    .arrowWrapper {
+      .arrowDown {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        .leftSide {
+          transform: rotate(-45deg);
+          margin-right: 4.5px;
+          height: 20px;
+          width: 2px;
+          border-radius: 2px;
+          background-color: #000;
+        }
+        .middlePart {
+          height: 50px;
+          width: 2px;
+          border-radius: 2px;
+          background-color: #000;
+          margin-bottom: 3px;
+        }
+        .rightSide {
+          margin-left: 4.5px;
+          transform: rotate(45deg);
+          height: 20px;
+          width: 2px;
+          border-radius: 2px;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
