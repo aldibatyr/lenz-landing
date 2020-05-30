@@ -75,7 +75,6 @@ nav {
 
 // ROW
 .heroBody {
-
   .row1 {
     margin-top: 100px;
     display: flex;
@@ -104,8 +103,12 @@ nav {
           display: flex;
           flex-direction: column;
           margin-right: 50px;
-          span {
-            font-weight: 600;
+          .smallerText {
+            display: flex;
+            flex-direction: column;
+            span {
+              font-weight: 600;
+            }
           }
           .mainInfoLargeText {
             font-size: 2.5rem;
@@ -147,6 +150,7 @@ nav {
     }
   }
   .row2 {
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     .arrowWrapper {
@@ -176,6 +180,28 @@ nav {
           width: 2px;
           border-radius: 2px;
           background-color: #000;
+        }
+      }
+    }
+    .imageWrapper {
+      .image {
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        width: 80vw;
+        height: 40vh;
+        .imagesStack {
+          position: relative;
+          #foreground {
+            position: absolute;
+            z-index: 100;
+            height: 350px;
+          }
+          #background {
+            top: 0;
+            position: absolute;
+            transform: translate(-35%, -40%);
+          }
         }
       }
     }
