@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 $palered: rgb(230, 84, 84);
 
 .App {
   position: relative;
+  font-family: 'Poppins', sans-serif;
   .backDecoration {
     position: absolute;
     width: 70%;
