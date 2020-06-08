@@ -7,8 +7,10 @@ const Navigation = () => {
   let tl = gsap.timeline();
 
   useEffect(() => {
-    tl.from('nav', {y: -100, opacity: 0})
-  }, [])
+    tl.from(['.navLink'], {y: -50, opacity: 0, stagger: 0.1})
+      .from('.top', {x: 10, opacity: 0, duration: 0.2})
+      .from('.bottom', {x: -10, opacity: 0, duration: 0.2}, '-=0.2')
+  })
 
 
   return (
@@ -17,10 +19,10 @@ const Navigation = () => {
       <div className="flexibleSpace"></div>
       <div className="navigationLinks">
         <ul>
-          <li>Награды</li>
-          <li>Портфолио</li>
-          <li>Стоимость</li>
-          <li>Контакты</li>
+          <li className='navLink'>Награды</li>
+          <li className='navLink'>Портфолио</li>
+          <li className='navLink'>Стоимость</li>
+          <li className='navLink'>Контакты</li>
         </ul>
       </div>
       <div className="drawerMenuToggle">

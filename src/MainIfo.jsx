@@ -48,8 +48,8 @@ const MainIfo = () => {
         </div>
         <div className="ctaButton">
           <div className="arrowIndicator">
-            <span className="top"></span>
-            <span className="bottom"></span>
+            <span className="topArrow"></span>
+            <span className="bottomArrow"></span>
           </div>
         </div>
       </div>

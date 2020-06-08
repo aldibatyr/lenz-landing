@@ -83,6 +83,7 @@ nav {
     .largeText {
       display: flex;
       flex-direction: column;
+      font-family: 'Poppins', sans-serif;
       span {
         font-size: 4.5rem;
         font-weight: 600;
@@ -138,11 +139,11 @@ nav {
             background: white;
             border-radius: 2px;
           }
-          .top {
+          .topArrow {
             transform: rotate(45deg);
             margin-bottom: 4px;
           }
-          .bottom {
+          .bottomArrow {
             transform: rotate(-45deg);
           }
         }
