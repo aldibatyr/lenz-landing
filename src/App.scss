@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 $palered: rgb(230, 84, 84);
 
+
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   font-family: 'Poppins', sans-serif;
   .backDecoration {
@@ -19,7 +22,7 @@ $palered: rgb(230, 84, 84);
   }
   .heroBodyContent {
     position: absolute;
-    max-width: 1366px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 100px;
   }
@@ -87,7 +90,7 @@ nav {
       flex-direction: column;
       font-family: 'Poppins', sans-serif;
       span {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         font-weight: 600;
         font-family: "Poppins";
         font-weight: 400;
@@ -97,7 +100,7 @@ nav {
     }
     .mainInfo {
       width: 100%;
-      padding-left: 100px;
+      padding-left: 50px;
       .mainInfoRow {
         display: flex;
         flex-direction: row;
@@ -105,7 +108,7 @@ nav {
         .mainInfoRowItem {
           display: flex;
           flex-direction: column;
-          margin-right: 50px;
+          margin-right: 25px;
           .smallerText {
             display: flex;
             flex-direction: column;

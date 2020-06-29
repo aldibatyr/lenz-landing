@@ -7,7 +7,7 @@ const Navigation = () => {
   let tl = gsap.timeline();
 
   useEffect(() => {
-    tl.from(['.navLink'], {y: -50, opacity: 0, stagger: 0.1})
+    tl.from(['.navLink'], {y: -50, opacity: 0, stagger: 0.1}, '+=2.8')
       .from('.top', {x: 10, opacity: 0, duration: 0.2})
       .from('.bottom', {x: -10, opacity: 0, duration: 0.2}, '-=0.2')
   })

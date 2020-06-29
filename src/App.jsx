@@ -5,9 +5,12 @@ import LargeText from "./LargeText";
 import MainIfo from "./MainIfo";
 import HeroImageContainer from "./HeroImageContainer";
 import Navigation from "./Navigation";
+import AnimatableOverlay from "./animatableOverlay/AnimatableOverlay";
 
 function App() {
   return (
+    <>
+    <AnimatableOverlay />
     <div className="App">
       <div className="backDecoration">
         <div className="borders"></div>
@@ -32,6 +35,7 @@ function App() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
