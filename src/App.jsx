@@ -3,7 +3,7 @@ import "./App.scss";
 
 import LargeText from "./LargeText";
 import MainIfo from "./MainIfo";
-import HeroImageContainer from "./HeroImageContainer";
+import HeroImageContainer from "./HeroImageContainer/HeroImageContainer";
 import Navigation from "./Navigation";
 import AnimatableOverlay from "./animatableOverlay/AnimatableOverlay";
 
@@ -30,11 +30,12 @@ function App() {
                 <span className="rightSide"></span>
               </div>
             </div>
-            <HeroImageContainer />
+            
           </div>
         </div>
       </div>
     </div>
+    <HeroImageContainer />
     </>
   );
 }

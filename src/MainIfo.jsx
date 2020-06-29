@@ -57,6 +57,7 @@ const MainIfo = () => {
           </p>
         </div>
         <div className="ctaButton">
+          <p className='hidden'>Оставить Заявку</p>
           <div className="arrowIndicator">
             <span className="topArrow"></span>
             <span className="bottomArrow"></span>

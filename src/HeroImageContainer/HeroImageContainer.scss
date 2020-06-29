@@ -1,0 +1,23 @@
+.imageWrapper {
+    .image {
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+      width: 80vw;
+      height: 40vh;
+      bottom: 0;
+      .imagesStack {
+        position: relative;
+        #foreground {
+          position: absolute;
+          z-index: 100;
+          height: 350px;
+        }
+        #background {
+          top: 0;
+          position: absolute;
+          transform: translate(-35%, -40%);
+        }
+      }
+    }
+  }
