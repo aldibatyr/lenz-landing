@@ -4,17 +4,17 @@ import "./MainInfo.scss";
 
 const MainIfo = () => {
   useEffect(() => {
-    gsap.from("#rowItemOne", { x: 100, opacity: 0, delay: "2.8" });
-    gsap.from("#rowItemSmallerTextOne", { x: 100, opacity: 0, delay: "2.85" });
-    gsap.from("#rowItemTwo", { x: 100, opacity: 0, delay: "2.9" });
-    gsap.from("#rowItemSmallerTextTwo", { x: 100, opacity: 0, delay: "2.95" });
-    gsap.from("#rowItemThree", { x: 100, opacity: 0, delay: "3" });
+    gsap.from("#rowItemOne", { x: -100, opacity: 0, delay: "2.8" });
+    gsap.from("#rowItemSmallerTextOne", { x: -100, opacity: 0, delay: "2.85" });
+    gsap.from("#rowItemTwo", { x: -100, opacity: 0, delay: "2.9" });
+    gsap.from("#rowItemSmallerTextTwo", { x: -100, opacity: 0, delay: "2.95" });
+    gsap.from("#rowItemThree", { x: -100, opacity: 0, delay: "3" });
     gsap.from("#rowItemSmallerTextThree", {
-      x: 100,
+      x: -100,
       opacity: 0,
       delay: "3.05",
     });
-    gsap.from(".mainInfoText", { x: 100, opacity: 0, delay: "3.15" });
+    gsap.from(".mainInfoText", { x: -100, opacity: 0, delay: "3.15" });
   });
   return (
     <div className="mainInfo">

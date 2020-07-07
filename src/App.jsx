@@ -12,7 +12,6 @@ function App() {
     <>
       <AnimatableOverlay />
       <div className="App">
-        <div className="backgroundImage"></div>
         <BackDecoration />
         <div className="heroBodyContent">
           <Navigation />
