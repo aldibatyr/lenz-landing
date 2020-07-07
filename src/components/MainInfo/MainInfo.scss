@@ -1,0 +1,42 @@
+$palered: rgb(230, 84, 84);
+
+.mainInfo {
+  width: 100%;
+  padding-left: 50px;
+
+  .mainInfoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .mainInfoRowItem {
+      display: flex;
+      flex-direction: column;
+      margin-right: 25px;
+
+      .smallerText {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .mainInfoLargeText {
+        font-size: 2.5rem;
+        color: $palered;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .mainInfoRow {
+    .mainInfoText {
+      width: 80%;
+      line-height: 2rem;
+      margin-right: 50px;
+    }
+  }
+}

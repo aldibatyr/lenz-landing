@@ -1,37 +1,27 @@
 import React from "react";
 import "./App.scss";
 
-import LargeText from "./LargeText";
-import MainIfo from "./MainIfo";
-import HeroImageContainer from "./HeroImageContainer";
-import Navigation from "./Navigation";
+// import HeroImageContainer from "./HeroImageContainer/HeroImageContainer";
+import Navigation from "./components/Navigation/Navigation";
+import AnimatableOverlay from "./components/AnimatableOverlay/AnimatableOverlay";
+import BackDecoration from "./components/BackDecoration/BackDecoration";
+import HeroBody from "./components/HeroBody/HeroBody";
 
 function App() {
   return (
-    <div className="App">
-      <div className="backDecoration">
-        <div className="borders"></div>
-      </div>
-      <div className="heroBodyContent">
-        <Navigation />
-        <div className="heroBody">
-          <div className="row1">
-            <LargeText/>
-            <MainIfo />
-          </div>
-          <div className="row2">
-            <div className="arrowWrapper">
-              <div className="arrowDown">
-                <span className="leftSide"></span>
-                <span className="middlePart"></span>
-                <span className="rightSide"></span>
-              </div>
-            </div>
-            <HeroImageContainer />
-          </div>
+    <>
+      <AnimatableOverlay />
+      <div className="App">
+        <div className="backgroundImage"></div>
+        <BackDecoration />
+        <div className="heroBodyContent">
+          <Navigation />
+          <HeroBody />
         </div>
       </div>
-    </div>
+
+      {/* <HeroImageContainer /> */}
+    </>
   );
 }
 
