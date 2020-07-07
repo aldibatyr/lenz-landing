@@ -1,0 +1,33 @@
+.arrowWrapper {
+    .arrowDown {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      .leftSide {
+        transform: rotate(-45deg);
+        margin-right: 4.5px;
+        height: 20px;
+        width: 2px;
+        border-radius: 2px;
+        background-color: #000;
+      }
+
+      .middlePart {
+        height: 50px;
+        width: 2px;
+        border-radius: 2px;
+        background-color: #000;
+        margin-bottom: 3px;
+      }
+
+      .rightSide {
+        margin-left: 4.5px;
+        transform: rotate(45deg);
+        height: 20px;
+        width: 2px;
+        border-radius: 2px;
+        background-color: #000;
+      }
+    }
+  }
