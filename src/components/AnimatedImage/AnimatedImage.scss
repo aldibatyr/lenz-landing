@@ -1,0 +1,25 @@
+.backgroundImageContaner {
+	height: 600px;
+	width: 450px;
+	position: relative;
+	overflow: hidden;
+
+	.solidColor {
+		z-index: -1;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: #a5a5a5;
+		height: 600px;
+		width: 450px;
+	}
+
+	.backgroundImage {
+		height: 600px;
+		width: 450px;
+		overflow: hidden;
+		img {
+			height: 100%;
+		}
+	}
+}
