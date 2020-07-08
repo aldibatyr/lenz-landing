@@ -63,6 +63,7 @@ const AnimatedImage = () => {
       .to(".backgroundImage", {
         width: 0,
         duration: 1,
+        ease: "power1.out",
       });
     return;
   };
@@ -72,9 +73,11 @@ const AnimatedImage = () => {
       .to(".backgroundImage", {
         width: 450,
         duration: 1,
+        ease: "power1.out",
+        delay: 0.2
       })
       .fromTo(".actualImage", { scale: 1 }, { scale: 1.3 }, "-=0.6")
-      .to(".projectInfo", { y: 0 });
+      .to(".projectInfo", { y: 0, duration: 0.5, ease: 'power1.inOut' });
   };
 
   useEffect(() => {
