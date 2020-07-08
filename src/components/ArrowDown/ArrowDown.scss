@@ -1,33 +1,34 @@
 .arrowWrapper {
+  width: calc(30% - 15px);
     .arrowDown {
       display: flex;
-      flex-direction: row;
-      align-items: flex-end;
+      flex-direction: column;
 
       .leftSide {
-        transform: rotate(-45deg);
-        margin-right: 4.5px;
-        height: 20px;
-        width: 2px;
+        transform: rotate(45deg);
+        margin-left: 33px;
+        margin-bottom: 4.5px;
+        height: 2px;
+        width: 20px;
         border-radius: 2px;
-        background-color: #000;
+        background-color: #fff;
       }
 
       .middlePart {
-        height: 50px;
-        width: 2px;
+        height: 2px;
+        width: 50px;
         border-radius: 2px;
-        background-color: #000;
-        margin-bottom: 3px;
+        background-color: #fff;
       }
 
       .rightSide {
-        margin-left: 4.5px;
-        transform: rotate(45deg);
-        height: 20px;
-        width: 2px;
+        margin-left: 33px;
+        margin-top: 4.5px;
+        transform: rotate(-45deg);
+        height: 2px;
+        width: 20px;
         border-radius: 2px;
-        background-color: #000;
+        background-color: #fff;
       }
     }
   }

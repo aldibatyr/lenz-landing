@@ -50,7 +50,7 @@ const MainIfo = () => {
       <div className="mainInfoRow">
         <div className="mainInfoText">
           <p>
-            <b>Lenz / Construction</b> это компания в состав которой входит
+            <span className="companyName">Lenz / Construction</span> это компания в состав которой входит
             лучшая команда строителей, архитекторов и мыслителей, люди которые
             знают свое дело.
           </p>

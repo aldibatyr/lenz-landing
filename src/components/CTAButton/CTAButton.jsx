@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import "./CTAButton.scss";
+import ArrowIndicator from "../ArrowIndicator/ArrowIndicator";
 
 const CTAButton = () => {
   // const [mouseEntered, setMouseEntered] = useState(false);
@@ -22,10 +23,7 @@ const CTAButton = () => {
       onMouseLeave={animateOffHover}
     >
       <p className="hidden">Оставить Заявку</p>
-      <div className="arrowIndicator">
-        <span className="topArrow"></span>
-        <span className="bottomArrow"></span>
-      </div>
+      <ArrowIndicator />
     </div>
   );
 };
