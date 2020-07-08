@@ -37,26 +37,6 @@ const AnimatedImage = () => {
   const animatedImageTimeline = gsap.timeline();
   const nextImageTimeline = gsap.timeline();
 
-  const animation = () => {
-    animatedImageTimeline
-      .from(".solidColor", {
-        x: -600,
-        duration: 1,
-        delay: 3,
-      })
-      .from(
-        ".backgroundImage",
-        {
-          width: 0,
-          duration: 1,
-        },
-        "-=0.4"
-      )
-      .to(".actualImage", { scale: 1.3 }, "-=0.6")
-      .to(".actualImage", { css: { className: "+=actualImage infiniteZoom" } })
-      .from(".projectInfo", { y: 300 });
-  };
-
   const nextImageAnimation = () => {
     nextImageTimeline
       .fromTo(".projectInfo", { y: 0 }, { y: 300 })
@@ -81,7 +61,23 @@ const AnimatedImage = () => {
   };
 
   useEffect(() => {
-    animation();
+    animatedImageTimeline
+      .from(".solidColor", {
+        x: -600,
+        duration: 1,
+        delay: 3,
+      })
+      .from(
+        ".backgroundImage",
+        {
+          width: 0,
+          duration: 1,
+        },
+        "-=0.4"
+      )
+      .to(".actualImage", { scale: 1.3 }, "-=0.6")
+      .to(".actualImage", { css: { className: "+=actualImage infiniteZoom" } })
+      .from(".projectInfo", { y: 300 });
   }, []);
 
   const handleNextClick = async () => {
