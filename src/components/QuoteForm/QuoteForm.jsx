@@ -40,9 +40,18 @@ const QuoteForm = ({ formState, toggleQuoteForm }) => {
 
   useEffect(() => {
     if (formState) {
-      gsap.to(".quoteFormContainer", { width: "100vw", duration: 0.5, ease: "power1.inOut" });
+      gsap.to(".quoteFormContainer", {
+        width: "100vw",
+        duration: 0.5,
+        ease: "power1.inOut",
+      });
+      gsap.to(".closeButton", { visibility: "visible" });
     } else {
-      gsap.to(".quoteFormContainer", { width: 0, duration: 0.5, ease: "power1.inOut" });
+      gsap.to(".quoteFormContainer", {
+        width: 0,
+        duration: 0.5,
+        ease: "power1.inOut",
+      });
     }
   }, [formState]);
   return (

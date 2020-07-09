@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import gsap from "gsap";
 import "./CTAButton.scss";
 import ArrowIndicator from "../ArrowIndicator/ArrowIndicator";
 
 const CTAButton = ({ toggleQuoteForm }) => {
-  // const [mouseEntered, setMouseEntered] = useState(false);
-  useEffect(() => {
-    gsap.from(".ctaButton", { scale: 0, ease: "back.inOut", delay: "3.1" });
-  }, []);
-
   const animateOnHover = () => {
     gsap.to(".ctaButton", { y: -5, duration: 0.1 });
   };

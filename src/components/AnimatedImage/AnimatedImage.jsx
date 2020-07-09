@@ -2,9 +2,7 @@ import React from "react";
 import dijon1 from "../../assets/Dijon+2.jpg";
 import dijon2 from "../../assets/Dijon+4.jpg";
 import dijon3 from "../../assets/Dijon+5.jpg";
-
 import "./AnimatedImage.scss";
-import { useEffect } from "react";
 import gsap from "gsap";
 import { useState } from "react";
 import ArrowDown from "../ArrowDown/ArrowDown";
@@ -34,7 +32,6 @@ const animatableObjects = [
 const AnimatedImage = () => {
   const container = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const animatedImageTimeline = gsap.timeline();
   const nextImageTimeline = gsap.timeline();
 
   const nextImageAnimation = () => {
@@ -54,31 +51,11 @@ const AnimatedImage = () => {
         width: 450,
         duration: 1,
         ease: "power1.out",
-        delay: 0.2
+        delay: 0.2,
       })
       .fromTo(".actualImage", { scale: 1 }, { scale: 1.3 }, "-=0.6")
-      .to(".projectInfo", { y: 0, duration: 0.5, ease: 'power1.inOut' });
+      .to(".projectInfo", { y: 0, duration: 0.5, ease: "power1.inOut" });
   };
-
-  useEffect(() => {
-    animatedImageTimeline
-      .from(".solidColor", {
-        x: -600,
-        duration: 1,
-        delay: 3,
-      })
-      .from(
-        ".backgroundImage",
-        {
-          width: 0,
-          duration: 1,
-        },
-        "-=0.4"
-      )
-      .to(".actualImage", { scale: 1.3 }, "-=0.6")
-      .to(".actualImage", { css: { className: "+=actualImage infiniteZoom" } })
-      .from(".projectInfo", { y: 300 });
-  }, []);
 
   const handleNextClick = async () => {
     const step = await nextImageAnimation();
@@ -102,17 +79,6 @@ const AnimatedImage = () => {
       y: ((relY - parent.height / 2) / parent.height) * movement,
     });
   };
-
-  // const hoverTranslate = () => {
-
-  // };
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     incrementIndex();
-  //   }, 10000);
-  //   return () => clearInterval(interval);
-  // }, [currentIndex]);
 
   const incrementIndex = (emptyObj) => {
     if (currentIndex < 2) {

@@ -7,9 +7,15 @@ import AnimatableOverlay from "./components/AnimatableOverlay/AnimatableOverlay"
 import BackDecoration from "./components/BackDecoration/BackDecoration";
 import HeroBody from "./components/HeroBody/HeroBody";
 import QuoteForm from "./components/QuoteForm/QuoteForm";
+import { useEffect } from "react";
+import animation from "./animation";
 
 function App() {
   const [showingQuoteForm, setShowingQuoteForm] = useState(false);
+
+  useEffect(() => {
+    animation();
+  }, []);
 
   const toggleQuoteForm = () => {
     setShowingQuoteForm(!showingQuoteForm);
@@ -29,8 +35,6 @@ function App() {
           <HeroBody toggleQuoteForm={toggleQuoteForm} />
         </div>
       </div>
-
-      {/* <HeroImageContainer /> */}
     </>
   );
 }
