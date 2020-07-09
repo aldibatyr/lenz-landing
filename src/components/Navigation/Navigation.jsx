@@ -9,12 +9,12 @@ const Navigation = () => {
   useEffect(() => {
     tl.from(['.navLink'], {y: -50, opacity: 0, stagger: 0.1}, '+=2.8')
 
-  }, [tl])
+  }, [])
 
   useEffect(() => {
       gsap.from('.top', {x: 10, opacity: 0, duration: 0.2, delay: 3})
       gsap.from('.bottom', {x: -10, opacity: 0, duration: 0.2, delay: 3.05} )
-  })
+  }, [])
 
 
   return (

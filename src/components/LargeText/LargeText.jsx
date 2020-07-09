@@ -9,7 +9,7 @@ const LargeText = () => {
     tl.from(".line1", { x: -100, opacity: 0 }, "+=2.8")
       .from(".line2", { x: -100, opacity: 0 }, "3.2")
       .from(".line3", { x: -100, opacity: 0 }, "3.3");
-  });
+  }, []);
   return (
     <div className="largeText">
       <span className="line1">Строительство</span>

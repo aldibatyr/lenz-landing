@@ -5,13 +5,13 @@ import CTAButton from "../CTAButton/CTAButton";
 import "./HeroBody.scss";
 import AnimatedImage from "../AnimatedImage/AnimatedImage";
 
-const HeroBody = () => {
+const HeroBody = ({ toggleQuoteForm }) => {
   return (
     <div className="heroBody">
       <div className="columnLeft">
         <LargeText />
         <MainIfo />
-        <CTAButton />
+        <CTAButton toggleQuoteForm={toggleQuoteForm} />
       </div>
       <AnimatedImage />
     </div>

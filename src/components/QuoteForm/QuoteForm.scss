@@ -1,0 +1,106 @@
+$palered: rgb(230, 84, 84);
+.quoteFormContainer {
+    font-family: futura-pt, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    .quoteFormContent {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            top: 0;
+            left: 0;
+            transform: scale(1.3);
+        }
+        .quoteForm {
+            position: absolute;
+            left: 0;
+            width: 500px;
+            height: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.25);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .closeButton {
+                width: 40px;
+                height: 40px;
+                background-color: #000;
+                margin-left: auto;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: 0.2s ease;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+                }
+                span {
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                }
+                .criss {
+                    transform: rotate(45deg);
+                }
+                .cross {
+                    transform: rotate(-45deg);
+                }
+            }
+            .formTitle {
+                font-size: 38px;
+                font-weight: 600;
+                font-family: futura-pt, sans-serif;
+            }
+            .formText {
+                width: 300px;
+                font-size: 20px;
+            }
+            .inputGroup {
+                display: flex;
+                margin-bottom: 10px;
+                font-size: 20px;
+                div {
+                    width: 100px;
+                }
+                input {
+                    font-family: futura-pt, sans-serif;
+                    font-size: 20px;
+                }
+            }
+            button {
+                border: none;
+                margin-top: 10px;
+                width: 250px;
+                height: 50px;
+                background-color: $palered;
+                font-size: 20px;
+                color: white;
+                transition: 0.2s ease;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+                }
+            }
+        }
+    }
+
+}

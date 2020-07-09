@@ -15,7 +15,7 @@ const MainIfo = () => {
       delay: "3.05",
     });
     gsap.from(".mainInfoText", { x: -100, opacity: 0, delay: "3.15" });
-  });
+  }, []);
   return (
     <div className="mainInfo">
       <div className="mainInfoRow">

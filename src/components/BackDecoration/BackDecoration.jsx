@@ -6,7 +6,7 @@ const BackDecoration = () => {
 
     useEffect(() => {
         gsap.from(".backDecoration", {height: 0, duration: 1, delay: 3})
-    })
+    }, [])
   return (
     <div className="backDecoration">
       <div className="borders"></div>
