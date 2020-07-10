@@ -1,0 +1,79 @@
+@import '../../breakpoints.scss';
+
+.largeScreen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include media('<=900px') {
+    display: none;
+  }
+
+  img {
+    max-width: 150px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+
+}
+
+.mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include media('>900px') {
+    display: none;
+  }
+
+  img {
+    max-width: 150px;
+    height: 75px;
+    object-fit: contain;
+  }
+}
+
+
+
+.navigationLinks {
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      list-style: none;
+      margin-right: 40px;
+    }
+  }
+
+  margin-right: 100px;
+}
+
+.flexibleSpace {
+  display: flex;
+  width: 100%;
+}
+
+.drawerMenuToggle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  span {
+    display: block;
+    width: 24px;
+    margin-bottom: 8px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  .top {
+    margin-left: 5px;
+  }
+
+  .bottom {
+    margin-bottom: 0px;
+  }
+}

@@ -29,7 +29,7 @@ function App() {
         toggleQuoteForm={toggleQuoteForm}
       />
       <div className="App">
-        <BackDecoration />
+        {/* <BackDecoration /> */}
         <div className="heroBodyContent">
           <Navigation />
           <HeroBody toggleQuoteForm={toggleQuoteForm} />

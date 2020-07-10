@@ -1,20 +1,38 @@
+@import '../../breakpoints.scss';
 $palered: rgb(230, 84, 84);
 
 .mainInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include media('<=1076px') {
+    align-items: center;
+  }
   .mainInfoRow {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    @include media('<=1076px') {
+      justify-content: space-between;
+    }
+    @include media('<lgPhone') {
+      justify-content: space-around;
+      width: 100%;
+    }
     .mainInfoRowItem {
       display: flex;
       flex-direction: column;
       margin-right: 25px;
-
+      @include media('<lgPhone') {
+        margin: 0;
+      }
       .smallerText {
         display: flex;
         flex-direction: column;
-
+        @include media('<lgPhone') {
+          font-size: 16px;
+        }
         span {
           font-family: futura-pt, sans-serif;
           font-weight: 300;
@@ -27,6 +45,9 @@ $palered: rgb(230, 84, 84);
         color: $palered;
         margin-bottom: 10px;
         font-weight: 500;
+        @include media('<lgPhone') {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -36,6 +57,14 @@ $palered: rgb(230, 84, 84);
       width: 80%;
       line-height: 2rem;
       margin-right: 50px;
+      @include media('<=1076px') {
+        width: 400px;
+        margin: auto;
+      }
+      @include media('<lgPhone') {
+        font-size: 16px;
+        padding: 5px 10px;
+      }
     }
   }
 }

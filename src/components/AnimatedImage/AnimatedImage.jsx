@@ -48,7 +48,7 @@ const AnimatedImage = () => {
   const nextAnimationStepTwo = () => {
     nextImageTimeline
       .to(".backgroundImage", {
-        width: 450,
+        width: '100%',
         duration: 1,
         ease: "power1.out",
         delay: 0.2,

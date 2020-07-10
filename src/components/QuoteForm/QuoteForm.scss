@@ -1,4 +1,7 @@
+@import '../../breakpoints.scss';
 $palered: rgb(230, 84, 84);
+
+
 .quoteFormContainer {
     font-family: futura-pt, sans-serif;
     position: fixed;
@@ -35,6 +38,10 @@ $palered: rgb(230, 84, 84);
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            @include media('<lgPhone') {
+                width: 300px;
+                justify-content: start;
+            }
             .closeButton {
                 visibility: hidden;
                 width: 40px;
@@ -50,6 +57,11 @@ $palered: rgb(230, 84, 84);
                 &:hover {
                     cursor: pointer;
                     box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+                }
+
+                @include media('<lgPhone') {
+                    width: 30px;
+                    height: 30px;
                 }
                 span {
                     display: block;
@@ -70,21 +82,36 @@ $palered: rgb(230, 84, 84);
                 font-size: 38px;
                 font-weight: 600;
                 font-family: futura-pt, sans-serif;
+                @include media('<lgPhone') {
+                    font-size: 24px;
+                }
             }
             .formText {
                 width: 300px;
                 font-size: 20px;
+                @include media('<lgPhone') {
+                    font-size: 16px;
+                }
             }
             .inputGroup {
                 display: flex;
                 margin-bottom: 10px;
                 font-size: 20px;
+                @include media('<lgPhone') {
+                    font-size: 16px;
+                }
                 div {
                     width: 100px;
+                    @include media('<lgPhone') {
+                        width: 80px;
+                    }
                 }
                 input {
                     font-family: futura-pt, sans-serif;
                     font-size: 20px;
+                    @include media('<lgPhone') {
+                        font-size: 16px;
+                    }
                 }
             }
             button {
@@ -101,6 +128,10 @@ $palered: rgb(230, 84, 84);
                 &:hover {
                     cursor: pointer;
                     box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+                }
+
+                @include media('<lgPhone') {
+                    font-size: 16px;
                 }
             }
         }

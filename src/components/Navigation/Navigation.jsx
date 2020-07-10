@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/Lenz_logo_final3.jpeg";
+import "./Navigation.scss";
 
 const Navigation = () => {
   return (
@@ -20,7 +21,14 @@ const Navigation = () => {
           <span className="bottom"></span>
         </div>
       </nav>
-      <nav className="mobile"></nav>
+      <nav className="mobile">
+        <img src={logo} alt="lenz logo" />
+        <div className="flexibleSpace"></div>
+        <div className="drawerMenuToggle">
+          <span className="top"></span>
+          <span className="bottom"></span>
+        </div>
+      </nav>
     </>
   );
 };

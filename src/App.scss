@@ -15,83 +15,18 @@ $palered: rgb(230, 84, 84);
   font-style: normal;
   font-size: 20px;
 
+  @include media('<lgPhone') {
+    font-size: 16px;
+  }
 
   .heroBodyContent {
     position: absolute;
-    // max-width: 100%;
+    width: 80%;
     margin: 0 auto;
-    padding: 0 100px;
-  }
-}
-
-// NAVIGATION
-
-.largeScreen {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  img {
-    max-width: 150px;
-    height: 75px;
-    object-fit: contain;
-  }
-
-  @media (max-width: 991.98px) {
-    .largeScreen {
-      display: none;
+    padding: 0 10%;
+    @include media('<=lgPhone') {
+      width: 90%;
+      padding: 0 5%;
     }
   }
 }
-
-.mobile {
-  display: none;
-
-  @media (max-width: 991.98px) {
-    display: none;
-  }
-}
-
-.navigationLinks {
-  ul {
-    display: flex;
-    flex-direction: row;
-
-    li {
-      list-style: none;
-      margin-right: 40px;
-    }
-  }
-
-  margin-right: 100px;
-}
-
-.flexibleSpace {
-  display: flex;
-  width: 100%;
-}
-
-.drawerMenuToggle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  span {
-    display: block;
-    width: 24px;
-    margin-bottom: 8px;
-    height: 2px;
-    background-color: black;
-    border-radius: 2px;
-  }
-
-  .top {
-    margin-left: 5px;
-  }
-
-  .bottom {
-    margin-bottom: 0px;
-  }
-}
-
-// ROW

@@ -1,11 +1,16 @@
+@import '../../breakpoints.scss';
 $palered: rgb(230, 84, 84);
 
 .backgroundImageContaner {
 	height: 600px;
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 	position: relative;
 	overflow: hidden;
 
+	@include media('<=1076px') {
+		margin-top: 20px;
+	}
 	.solidColor {
 		z-index: -1;
 		top: 0;
@@ -13,26 +18,30 @@ $palered: rgb(230, 84, 84);
 		position: absolute;
 		background: #1a1717;
 		height: 600px;
-		width: 450px;
+		width: 100%;
+		max-width: 450px;
 	}
 
 	.backgroundImage {
 		height: 600px;
-		width: 450px;
+		max-width: 450px;
+		width: 100%;
 		overflow: hidden;
 		position: relative;
 
 		.projectInfo {
 			position: absolute;
 			min-height: 200px;
-			width: 435px;
+			width: 100%;
+			max-width: 435px;
 			padding: 10px 0 15px 15px;
 			bottom: 0;
 			left: 0;
 			z-index: 3;
 			color: white;
 			background: rgba($color: #000000, $alpha: 0.7);
-			min-width: 430px;
+			width: 100%;
+			min-width: 300px;
 			display: flex;
 			justify-content: space-between;
 

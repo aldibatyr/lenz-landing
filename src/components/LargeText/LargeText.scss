@@ -1,6 +1,19 @@
+@import '../../breakpoints.scss';
+
 .largeText {
   display: flex;
   flex-direction: column;
+
+  @include media('<=1076px') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  @include media('<lgPhone') {
+    padding: 5px 10px;
+  }
 
   span {
     font-size: 70px;
@@ -9,5 +22,10 @@
     font-style: normal;
     line-height: 90%;
     letter-spacing: -0.2rem;
+
+    @include media('<=1076px') {
+      font-size: 50px;
+      margin-right: 1rem;
+    }
   }
 }

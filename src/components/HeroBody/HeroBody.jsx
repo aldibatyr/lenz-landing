@@ -11,7 +11,9 @@ const HeroBody = ({ toggleQuoteForm }) => {
       <div className="columnLeft">
         <LargeText />
         <MainIfo />
-        <CTAButton toggleQuoteForm={toggleQuoteForm} />
+        <div className="ctaWrapper">
+          <CTAButton toggleQuoteForm={toggleQuoteForm} />
+        </div>
       </div>
       <AnimatedImage />
     </div>

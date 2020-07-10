@@ -7,17 +7,45 @@
   justify-content: space-between;
   flex-direction: row;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
   @include media('>desktop') {
     margin-top: 200px;
   }
+
+  @include media('<=1076px') {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include media('<lgPhone') {
+    padding: 0;
+    padding-top: 20px;
+  }
   .columnLeft {
     width: 50%;
-    & > div {
+
+    @include media('<=1076px') {
+      width: 100%;
+    }
+
+    &>div {
       margin-top: 20px;
+
       &:first-child {
         margin-top: 0;
       }
     }
 
+    .ctaWrapper {
+      @include media('<=1076px') {
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      // @inc
+    }
   }
 }
