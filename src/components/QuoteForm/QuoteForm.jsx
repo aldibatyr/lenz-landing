@@ -105,7 +105,6 @@ const QuoteForm = ({ formState, toggleQuoteForm }) => {
                 name="number"
                 placeholder="Контактный телефон"
                 id="number"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required
               />
             </div>
